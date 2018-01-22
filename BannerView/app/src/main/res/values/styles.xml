@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <declare-styleable name="Banner">
+        <!-- 指示器SIZE，如果indicatorWidth和indicatorHeight都没有指定，则指示器长宽都取indicatorSize的值-->
+        <attr name="indicatorSize" format="dimension" />
+        <!--  指示器的宽度-->
+        <attr name="indicatorWidth" format="dimension" />
+        <!--  指示器的高度-->
+        <attr name="indicatorHeight" format="dimension" />
+        <!--  首次自动轮播的延迟 默认1S-->
+        <attr name="delay" format="integer" />
+        <!--  自动轮播的间隔周期  默认5S-->
+        <attr name="period" format="integer" />
+        <!--  指示器的样式选择器，这里支持selector-->
+        <attr name="indicatorSelector" format="reference" />
+        <!--  图片没有加载出来的时候显示的占位图-->
+        <attr name="defaultPic" format="reference" />
+    </declare-styleable>
+</resources>
